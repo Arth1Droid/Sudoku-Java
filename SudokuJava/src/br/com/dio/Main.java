@@ -102,8 +102,6 @@ public class Main {
         var col = runUntilGetValidNumber(0, 8);
         System.out.println("Informe a linha em que o número será inserido: ");
         var row = runUntilGetValidNumber(0, 8);
-        System.out.printf("Informe o número que vai entrar na posição [%s,%s]\n", col, row);
-
         if(!board.clearValue(col, row)){
             System.out.printf("A posição [%s, %s] tem um valor fixo \n", col, row); 
         }
@@ -148,7 +146,7 @@ public class Main {
         
         System.out.println("Tem certeza que deseja limpar o jogo ? (O progresso será perdido)");
         var confirm = scanner.next();
-        while(!confirm.equalsIgnoreCase("sim") || !confirm.equalsIgnoreCase("não")){
+        while(!confirm.equalsIgnoreCase("sim") && !confirm.equalsIgnoreCase("não")){
             System.out.println("Informe 'sim' ou 'não'");
              confirm = scanner.next();
         }

@@ -1,3 +1,5 @@
+package br.com.dio.utill;
+
 public final class BoardTemplate {
 
     private BoardTemplate() {}

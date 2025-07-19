@@ -12,18 +12,18 @@ public class BoardService {
     private final static int BOARD_LIMIT = 9;
     private final Board board;
     
-    public BoardService(final Map<String, String> gameconfig) {
+    public BoardService(final Map<String, String> gameConfig) {
         this.board = new Board(initBoard(gameConfig));
     }
 
     public List<List<Space>> getSpaces(){
-        board.getSpaces();
+        return board.getSpaces();
     }
     public void reset(){
          board.reset();
     }
     public boolean hasErrors(){
-        board.hasErrors();
+        return board.hasErrors();
     }
     public GameStatusEnum getStatus(){
         return board.getStatus();

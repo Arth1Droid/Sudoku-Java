@@ -83,7 +83,7 @@ java UIMain
 
 ## Autores
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@Arth1Droid](https://www.github.com/Arth1Droid)
 
 👨‍💻 Autor
 Arthur Barbosa Barros
